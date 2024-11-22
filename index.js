@@ -68,4 +68,13 @@ function countDownRecurs(n) {
     
 }
 
-console.log(countDownRecurs(2));
+function countUpRecur(n) {
+  if (n > 10) {
+    return n;
+  } else {
+    console.log(n);
+    return countUpRecur(n + 1);
+  }
+}
+
+countUpRecur(1);
